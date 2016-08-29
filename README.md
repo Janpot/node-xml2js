@@ -195,7 +195,7 @@ function (name){
 Some processors are provided out-of-the-box and can be found in `lib/processors.js`:
 
 - `normalize`: transforms the name to lowercase.
-(Automatically used when `options.normalize` is set to `true`)
+(Automatically used when `options.normalizeTags` is set to `true`)
 
 - `firstCharLowerCase`: transforms the first character to lower case.
 E.g. 'MyTagName' becomes 'myTagName'
@@ -234,7 +234,7 @@ value})``. Possible options are:
     text nodes.
   * `mergeAttrs` (default: `false`): Merge attributes and child elements as
     properties of the parent, instead of keying attributes off a child
-    attribute object. This option is ignored if `ignoreAttrs` is `false`.
+    attribute object. This option is ignored if `ignoreAttrs` is `true`.
   * `validator` (default `null`): You can specify a callable that validates
     the resulting structure somehow, however you want. See unit tests
     for an example.
